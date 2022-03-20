@@ -1,0 +1,34 @@
+<button (click)="goBack()" style="margin-top: 15px;" class="backtop btn btn-warning"><i class="fas fa-angle-double-left"></i> Back to Products
+</button>
+<button class="addtocart btn btn-warning">CART
+    <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+</button>
+<div class="wrapper">
+
+    <ng-container *ngFor="let item of productList">
+    <div class="product-img">
+      <img src="{{item.image}}" height="420" width="327">
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1>{{item.title}}</h1>
+        <p>{{item.description}}</p>
+        <ngb-rating [rate]="item.rating" [readonly]='true'>
+            <ng-template let-fill="fill" let-index="index">
+
+          </ng-template>
+          </ngb-rating>
+          </div>
+      <div class="product-price-btn">
+        <span>{{item.price}}$</span>
+        <br>
+        <button type="button"(click)="addtocart(item)">buy now</button>
+      </div>
+    </div>
+</ng-container>
+  </div>
+
+
+  <br>
+  <br>
+  <br>

@@ -1,0 +1,175 @@
+{
+  "signup": [
+    {
+      "id": 1,
+      "name": "Hilal",
+      "phoneno": "0234555513",
+      "loc": "dgdhsfh",
+      "email": "hilalturhan515@gmail.com",
+      "password": "1212.",
+      "cart": [
+        {
+          "id": 1,
+          "category": "electronics",
+          "image": "https://www.apple.com/newsroom/images/product/airpods/standard/Apple_AirPods-Pro_New-Design-Case-And-AirPods-Pro_102819_big.jpg.large.jpg",
+          "title": "Airpods Pro",
+          "description": "AirPods Pro have been designed to deliver active Noise Cancellation for immersive sound. Transparancy mode so much can hear your surroundings.",
+          "price": 350,
+          "total": 350,
+          "aquant": 10,
+          "rating": 3,
+          "color": "white",
+          "quantity": 1
+        }
+      ],
+      "category": []
+    },
+    {
+      "id": 6,
+      "name": "SenemDemir",
+      "phoneno": "0900655513",
+      "loc": "gdsgsre",
+      "email": "senem@gmail.com",
+      "password": "12345.",
+      "cart": [
+        {
+          "id": 2,
+          "category": "electronics",
+          "image": "https://www.apple.com/newsroom/images/product/watch/standard/Apple_watch-series-6-aluminum-red-case-altimeter_09152020_inline.jpg.large.jpg",
+          "title": "Apple Watch",
+          "description": "The most advanced Apple Watch yet, featuring the Always-On Retina display, the ECG app, international emergency calling, fall detection and a built‑in compass.",
+          "price": 340,
+          "total": 340,
+          "aquant": 3,
+          "rating": 4,
+          "color": "red",
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "category": "electronics",
+          "image": "https://www.apple.com/newsroom/images/product/watch/standard/Apple_watch-series-6-aluminum-red-case-altimeter_09152020_inline.jpg.large.jpg",
+          "title": "Apple Watch",
+          "description": "The most advanced Apple Watch yet, featuring the Always-On Retina display, the ECG app, international emergency calling, fall detection and a built‑in compass.",
+          "price": 340,
+          "total": 340,
+          "aquant": 3,
+          "rating": 4,
+          "color": "red",
+          "quantity": 1
+        }
+      ],
+      "category": []
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "category": "electronics",
+      "image": "https://www.apple.com/newsroom/images/product/airpods/standard/Apple_AirPods-Pro_New-Design-Case-And-AirPods-Pro_102819_big.jpg.large.jpg",
+      "title": "Airpods Pro",
+      "description": "AirPods Pro have been designed to deliver active Noise Cancellation for immersive sound. Transparancy mode so much can hear your surroundings.",
+      "price": 350,
+      "total": 350,
+      "aquant": 10,
+      "rating": 3,
+      "color": "white"
+    },
+    {
+      "id": 2,
+      "category": "electronics",
+      "image": "https://www.apple.com/newsroom/images/product/watch/standard/Apple_watch-series-6-aluminum-red-case-altimeter_09152020_inline.jpg.large.jpg",
+      "title": "Apple Watch",
+      "description": "The most advanced Apple Watch yet, featuring the Always-On Retina display, the ECG app, international emergency calling, fall detection and a built‑in compass.",
+      "price": 340,
+      "total": 340,
+      "aquant": 3,
+      "rating": 4,
+      "color": "red"
+    },
+    {
+      "id": 3,
+      "category": "electronics",
+      "image": "https://image.coolblue.nl/max/1248x535/content/3b9a2b0ec3ad9c544778c16d6947adea",
+      "title": "Macbook Pro",
+      "description": "Designed for those who defy limits and change the world, the new MacBook Pro is by far the most powerful notebook we’ve ever made. it’s the ultimate pro notebook for the ultimate user",
+      "price": 800,
+      "total": 800,
+      "aquant": 7,
+      "rating": 2,
+      "color": "black"
+    },
+    {
+      "id": 4,
+      "category": "electronics",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-11-pro-midnight-green-select-2019?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1566954990073",
+      "title": "iPhone 11 pro",
+      "description": "A mind‑blowing chip that doubles down on machine learning and pushes the boundaries of what a smartphone can do. Welcome to the first iPhone powerful enough to be called Pro.",
+      "price": 500,
+      "total": 500,
+      "aquant": 5,
+      "rating": 1,
+      "color": "black"
+    },
+    {
+      "id": 5,
+      "category": "electronics",
+      "image": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202003_FMT_WHH?wid=940&hei=1112&fmt=png-alpha&qlt=80&.v=1583553704156",
+      "title": "iPad pro",
+      "description": "It’s a magical piece of glass. It’s so fast most PC laptops can’t catch up. And you can use it with touch, pencil, keyboard and now trackpad. It’s the new iPad Pro.",
+      "price": 410,
+      "total": 410,
+      "aquant": 8,
+      "rating": 3,
+      "color": "white"
+    },
+    {
+      "id": 6,
+      "category": "fashion",
+      "image": "https://ktnimg.mncdn.com/mnresize/868/1140/product-images/2KAK52891UW23W/1500Wx1969H/2KAK52891UW23W_G02_zoom2_V02.jpg",
+      "title": "Peacock Cinched Shirt Jacket",
+      "description": "A button-down shirt, with a tie at the waist",
+      "price": 62,
+      "total": 62,
+      "aquant": 12,
+      "rating": 4,
+      "color": "multicolor"
+    },
+    {
+      "id": 7,
+      "category": "fashion",
+      "image": "https://cdn2.sorsware.com/addax/ContentImages/Product/2021-yaz-sezonu/ADX-0000024831/balon-kol-gipeli-elbise-e8107-w45_adx-0000024831_sari-sari_2_buyuk.jpg",
+      "title": "Yellow Gathered Top",
+      "description": "Yellow gathered top with embroidered yoke in key hole neckline and three-quarter sleeves.",
+      "price": 38,
+      "total": 38,
+      "aquant": 6,
+      "rating": 5,
+      "color": "yellow"
+    },
+    {
+      "id": 8,
+      "category": "fashion",
+      "image": "https://cdn.cimri.io/image/1000x1000/koton-9kaf80476gw-yesil-firfir-detayli-kadin-elbise_235402247.jpg",
+      "title": "Light green flared dress",
+      "description": "Light green flared dress in round neck paired with matching soft mesh drape.",
+      "price": 45,
+      "total": 45,
+      "aquant": 8,
+      "rating": 4,
+      "color": "green"
+    },
+    {
+      "id": 9,
+      "category": "fashion",
+      "image": "https://www.mooibutik.com/kalp-yaka-midiboy-yirtmacli-elbise-saks-mavi-elbise-mooi-butik-9318-22-B.jpg",
+      "title": "Blue dress",
+      "description": "Light blue printed straight kurta with placket and pleat details in mandarin collar.",
+      "price": 50,
+      "total": 50,
+      "aquant": 4,
+      "rating": 4,
+      "color": "blue"
+    }
+  ]
+}

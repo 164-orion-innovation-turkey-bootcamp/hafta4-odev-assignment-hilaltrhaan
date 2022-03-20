@@ -1,0 +1,144 @@
+<head>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+        .form-control{
+            border-radius: 3px;
+            width:600px;
+            margin-left: 20px;
+        }
+        .search-icon{
+            position: absolute;
+            z-index: 30;
+            right:53%;
+
+            color:purple;
+        }
+        p{
+            text-align: center;
+        }
+        .example-container {
+            background: linear-gradient(to right bottom, white, #FFD65B);
+        }
+
+        .example-sidenav-content {
+          display: flex;
+          height: 100%;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .example-sidenav {
+          padding:20px;
+        }
+        .slider{
+          width:275px;
+        }
+        .filter{
+          padding-top: 1em;
+          border: 2px solid black;
+          border-radius: .25rem;
+        }
+        .ul_checkbox ul{
+          padding-left: 0%;
+        }
+        .ul_checkbox ul li{
+          list-style-type: none;
+        }
+        .ul_checkbox ul li input{
+          margin: 4px;
+        }
+
+    </style>
+</head>
+<header>
+    <div class="navbar shadow-sm">
+      <div class="navbar-brand align-item-center d-flex">
+        <div class="form-group">
+            <div class="input-group">
+            <div class="input-group-prepend border-0">
+                <button id="button-addon4" type="button" class="btn btn-link text-info"><i class="fa fa-search"></i></button>
+              </div>
+              <input type="search" class="form-control" (keyup)="search($event)" [(ngModel)]="searchKey" placeholder="Search Products.." aria-describedby="button-addon4" class="form-control bg-light border-0">
+              </div>
+            </div>
+            </div>
+      <button routerLink="../cart" class="addtocart btn btn-warning">CART
+          <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+      </button>
+    </div>
+</header>
+<body>
+
+
+<mat-drawer-container class="example-container" style="height:100%;width:100%;background: linear-gradient(to right bottom, white, #FFD65B);">
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <div class="filter">
+    <p style="font-size: 30px;">Filter<i class="fas fa-filter"></i></p>
+  </div>
+    <br>
+    <br>
+
+    <br>
+    <br>
+    <p style="text-align: left;">Color</p>
+    <div class="container">
+      <div class=ul_checkbox>
+      <ul>
+        <li *ngFor="let checkboxitem of checkboxarray">
+          <input type="checkbox" value={{checkboxitem.color}} (change)="onChange($event)">{{checkboxitem.color}}
+        </li>
+      </ul>
+    </div>
+    </div>
+
+
+
+    <br>
+    <br>
+
+  </mat-drawer>
+  <div class="example-sidenav-content">
+    <button type="button" class="btn btn-warning" style="margin-top:3em;" (click)="drawer.toggle()">
+      Filter Products
+    </button>
+  </div>
+  <div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of colorfilteredlist | filter1:searchKey:'title'">
+            <div class="card col-md-3">
+              <div class="img-cont">
+                <img src="{{item.image}}" alt="">
+                <div class="overlay"></div>
+  <div class="button"><a routerLink="./{{item.id}}"> Product Details </a></div>
+              </div>
+                <h3 style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;font-weight:bold;max-width: 300ch;">{{item.title}}</h3>
+                <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 300ch;">{{item.description}}</p>
+                <p><strong>Price:</strong>{{item.price}}$</p>
+                <div class="items">
+                <div class="quantityadd">
+                    <button type="button" (click)="inc(item)" class="sbtn btn btn-warning mx-2"><i class="fa fa-plus"></i></button>
+                    <span>{{item.quantity}}</span>
+                    <button type="button" (click)="dec(item)" class="sbtn btn btn-warning mx-2"><i class="fa fa-minus"></i></button>
+                    </div>
+                    <ngb-rating [rate]="item.rating" [readonly]='true'>
+                      <ng-template let-fill="fill" let-index="index">
+                      <span class="star" [class.filled]="fill === 100">&#9733;</span>
+                    </ng-template>
+                    </ngb-rating>
+                  </div>
+                    <br>
+                <button (click)="addtocart(item)" class="cartbtn btn btn-warning">Add to cart</button>
+            </div>
+
+        </ng-container>
+
+    </div>
+</div>
+
+</mat-drawer-container>
+<br>
+<br>
+<br>
+
+
+</body>

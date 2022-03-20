@@ -1,0 +1,37 @@
+
+@use '@angular/material' as mat;
+
+
+
+@include mat.core();
+
+$routeapp-primary: mat.define-palette(mat.$indigo-palette);
+$routeapp-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+$routeapp-warn: mat.define-palette(mat.$red-palette);
+
+$routeapp-theme: mat.define-light-theme((
+  color: (
+    primary: $routeapp-primary,
+    accent: $routeapp-accent,
+    warn: $routeapp-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($routeapp-theme);
+
+
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@import '~bootstrap/scss/bootstrap';
